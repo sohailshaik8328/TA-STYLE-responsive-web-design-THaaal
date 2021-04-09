@@ -1,0 +1,122 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-desktop-view.png)
+
+#### Small Screen view(Below 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-mob-view.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Pay attention to the codes, your code quality matters a lot.
+
+- Try to implement the layout as exactly as it has been provided in the design.
+
+- Pay attention to minor things like spacing, alignment, size, etc.
+
+- Use any font-family which suits better for the assignment.
+
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/17bbe460ec.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container flex column">
+            <div class="logo">
+                <img src="./assets/media/logo.png" alt="Brand Logo">
+            </div>
+            <nav class="nav">
+                <ul class="flex">
+                    <li><a class="home" href="#">HOME</a></li>
+                    <li><a class="home blog_active" href="#">BLOG</a></li>
+                    <li><a class="home" href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="pencil">
+            <div class="container flex">
+                <aside class="aside flex-48">
+                    <h1>Why Lorem Ipsum?</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem libero aperiam sequi ratione ea corporis aspernatur officia ex nihil reiciendis? Necessitatibus rem possimus asperiores impedit voluptatem sit iure voluptatibus praesentium.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iste et inventore, numquam accusantium velit! Itaque dolor tempore ipsum ullam inventore optio assumenda, soluta, temporibus cumque sint vitae dolorem nobis.
+                    Lorem ipsum dolor, sit amet Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum provident facere aliquam nesciunt dolor, quae libero dolore reiciendis voluptates, repellendus temporibus quia debitis modi. Quae numquam quisquam eaque similique doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis qui consectetur adipisicing elit. Magnam accusantium tempora provident doloremque ducimus quasi perferendis qui, atque explicabo cum iste, nesciunt voluptatum? Modi ducimus harum asperiores dolor amet ipsa.
+                    </p>
+                    <div class="btn_div">
+                        <a class="btn" href="#">READ MORE</a>
+                    </div>
+                </aside>
+
+                <article class="pencil_img flex-48">
+                    <img src="./assets/media/01.png" alt="">
+                </article>
+            </div>
+        </section>
+
+        <section class="gal_section">
+            <div class="container">
+                <h2>Our Blog</h2>
+                <div class="gallery flex">
+                    <article class="flex-30 card ">
+                        <img src="./assets/media/02.png" alt="">
+                        <h3>Why do we use it?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem tenetur itaque ab dicta porro veniam, corrupti ullam, magni modi fugiat? Accusamus mollitia, eligendi adipisci aperiam laborum officiis similique. Harum?</p> 
+                        <div class="btn_div">
+                            <a class="btn" href="#">READ MORE</a>   
+                        </div>
+                    </article>
+                    <article class="flex-30 card ">
+                        <img src="./assets/media/03.png" alt="">
+                        <h3>Where does it come from?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem tenetur itaque ab dicta porro veniam, corrupti ullam, magni modi fugiat? Accusamus mollitia, eligendi adipisci aperiam laborum officiis similique. Harum?</p> 
+                        <div class="btn_div">
+                            <a class="btn" href="#">READ MORE</a>   
+                        </div>
+                    </article>
+                    <article class="flex-30 card ">
+                        <img src="./assets/media/04.png" alt="">
+                        <h3>Where can I get some?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem tenetur itaque ab dicta porro veniam, corrupti ullam, magni modi fugiat? Accusamus mollitia, eligendi adipisci aperiam laborum officiis similique. Harum?</p> 
+                        <div class="btn_div">
+                            <a class="btn" href="#">READ MORE</a>   
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer flex center">
+        <div class="container flex column">
+            <small class="foot_left">
+                &copy; AltCampus
+            </small>
+            <div>
+                <nav class="foot_nav">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
