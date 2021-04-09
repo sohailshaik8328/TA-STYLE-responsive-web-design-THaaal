@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom styles */
+.container{
+    max-width: 1800px;
+    width: 100%;
+    margin: auto;
+    /* padding: 0 32px; */
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.center{
+    justify-content: center;
+}
+.header{
+    background-color: #222946;
+    width: 100%;
+    padding: 16px 0;
+    
+}
+.nav ul li .home{
+    text-decoration: none;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 32px;
+}
+.nav  ul li .blog_active{
+    color: #37B667;
+}
+/* main */
+.pencil{
+    background-color: #E9ECFC;
+    padding: 48px 0;
+}
+.aside h1{
+    font-size: 48px;
+}
+.aside p{
+    font-size: 20px;
+    color: gray;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+.btn_div{
+    margin-top: 30px;
+}
+.btn{
+    text-decoration: none;
+    background-color: #37B667;
+    padding: 16px 32px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.pencil_img img{
+    width: 100%;
+}
+
+/* card section */
+.card{
+    width: 30%;
+}
+h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+.card h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.card p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: gray;
+    margin-top: 20px;
+}
+.gallery{
+    margin-top: 50px;
+}
+.card img{
+    width: 100%;
+}
+.gal_section{
+margin-top: 80px;
+}
+/* footer css */
+.footer{
+    background-color: #222946;
+    width: 100%;
+    padding: 32px 0;
+    margin-top: 50px;
+}
+.foot_left{
+    font-size: 24px;
+    color: #ffffff;
+}
+.foot_nav i{
+    background-color: #ffffff98;
+    color: black;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 12px ;
+    margin-right: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .pencil .flex{
+        flex-wrap: wrap-reverse;
+    }
+    .flex-48{
+        flex: 0 1 100%;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .flex-30{
+        flex: 0 1 100%;
+    }
+    .card{
+        margin: 20px 0;
+    }
+    .column{
+        flex-direction: column;
+    }
+    header .nav{
+        margin-top: 55px 0;
+    }
+    footer .foot_nav{
+        margin: 20px 0;  
+    }
+    .foot_nav i{
+        font-size: 12px;
+        padding: 10px;
+        margin: 0 10px;
+    }
+    .header{
+        padding: 44px 0;
+    }
+    .logo{
+        margin-bottom: 24px;
+    }
+    .aside{
+        margin-top: 30px;
+    }
+    .container{
+        width: 90%;
+    }
+   
+}
+
+
+
